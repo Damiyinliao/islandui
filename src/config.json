@@ -1,0 +1,16 @@
+{
+  "components": [
+    {
+      "name": "Modal",
+      "cName": "模态框",
+      "setup": true,
+      "author": "hw"
+    },
+    {
+      "name": "Image",
+      "cName": "图片",
+      "setup": true,
+      "author": "hw"
+    }
+  ]
+}
