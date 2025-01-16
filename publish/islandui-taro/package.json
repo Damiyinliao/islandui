@@ -11,13 +11,8 @@
     "*.scss",
     "*.css"
   ],
-  "web-types": "dist/smartips/web-types.json",
   "keywords": [
-    "nutui",
-    "nutui2",
-    "nutui3",
-    "nutui4",
-    "vue",
+    "islandui",
     "vue3",
     "webpack",
     "vue component",
@@ -34,10 +29,7 @@
   },
   "files": [
     "dist",
-    "README.md",
-    "package.json",
-    "LICENSE",
-    "CHANGELOG.md"
+    "package.json"
   ],
   "scripts": {
     "publish:beta": "npm publish --tag=beta",
@@ -59,7 +51,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdf2e/nutui.git"
+    "url": "https://github.com/Damiyinliao/islandui.git"
   },
-  "homepage": "https://nutui.jd.com/"
+  "homepage": "https://github.com/Damiyinliao"
 }

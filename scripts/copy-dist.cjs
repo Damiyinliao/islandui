@@ -5,7 +5,7 @@ if (!target) {
   console.error('缺少 islandui or islandui-taro 参数！')
   return
 }
-let copyfile = ['dist']
+let copyfile = ['dist','README.md', 'LICENSE',]
 const path = require('path')
 const fs = require('fs-extra')
 // 清空 dist

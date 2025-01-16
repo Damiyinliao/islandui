@@ -56,3 +56,45 @@ const handleError = (e: any) => {
   console.warn(e.detail.errMsg);
 };
 </script>
+<style lang="scss">
+@keyframes imageloading {
+
+  /* 骨架屏的动画 */
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.island-image {
+  position: relative;
+  overflow: hidden;
+
+  .skeleton-container {
+    display: block;
+    background-color: #F2F2F2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--island-image-height);
+  }
+
+  .skeleton-container:after {
+    /* 内容区域空状态时追加骨架屏样式 */
+    content: '';
+    display: block;
+    width: 100%;
+    height: var(--island-image-height);
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(225, 225, 225, 0.753), transparent);
+    animation: imageloading 3s infinite;
+  }
+
+  .inner-image {
+    width: 100%;
+    position: relative;
+    height: var(--island-image-height);
+    transition: all .2s;
+  }
+}
+</style>
